@@ -15,6 +15,7 @@ pipeline {
       steps {
         sh 'mvn clean test'
       }
+    }
 
     stage('Git Bisect') {
       steps {
@@ -27,3 +28,4 @@ pipeline {
     }
   }
 }
+
