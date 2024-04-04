@@ -11,12 +11,6 @@ pipeline {
       }
     }
 
-    stage('run') {
-      steps {
-        sh 'mvn clean test'
-      }
-    }
-
     stage('Git Bisect') {
       steps {
         sh 'git bisect start'
